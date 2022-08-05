@@ -1,0 +1,42 @@
+nav{
+   background-color: rgb(0,0,0);
+}
+ul{
+   list-style: none;
+}
+
+.ti{
+   color: #FFF;
+   font-size: 2em;
+   margin-right: .5em;
+   -webkit-appearance: none !important; 
+}
+
+   
+
+.banner {
+   background-image: url(../IMG/banner2.png);
+   background-position: absolute;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   min-height: 50vh;
+   margin: auto;
+}
+
+  
+.rounded-circle.w-25{
+   position:absolute;
+   z-index:1;
+   margin-top: -9rem;
+   margin-left: .5rem;
+   width: 7.5rem !important;
+   background-color: #FFF;
+   height: auto;
+
+}
+
+h4 .mt-9{
+   margin-top: 10rem;
+
+}
+
