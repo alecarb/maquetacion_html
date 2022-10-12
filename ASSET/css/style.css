@@ -1,42 +1,212 @@
-nav{
-   background-color: rgb(0,0,0);
-}
-ul{
-   list-style: none;
-}
-
-.ti{
-   color: #FFF;
-   font-size: 2em;
-   margin-right: .5em;
-   -webkit-appearance: none !important; 
-}
-
+@media (max-width: 1700px){ 
    
-
-.banner {
-   background-image: url(../IMG/banner2.png);
-   background-position: absolute;
-   background-size: 100%;
-   background-repeat: no-repeat;
-   min-height: 50vh;
-   margin: auto;
-}
-
+   nav{
+      background-color: rgb(0,0,0);
+      max-height: 4.5rem;
+   }
+   ul{
+      list-style: none;
+   }
   
-.rounded-circle.w-25{
-   position:absolute;
-   z-index:1;
-   margin-top: -9rem;
-   margin-left: .5rem;
-   width: 7.5rem !important;
-   background-color: #FFF;
-   height: auto;
+   .banner {
+      background-image: url(../IMG/banner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 35rem;
+      position: relative;
+      margin-bottom: 2rem;
+   }
+   
+   
+   .about-container{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .7);
+      background-color: rgb(0 0 0 / 20%);
+      /** Codigo para alinear vertical y horizontalmente **/
+      display: flex;
+      flex-direction: colum;
+      align-items: auto;
+      justify-content: space-around;
+   }
+   .image{
+      display: flex;
+      justify-content: start;
+      width: 10.5rem;
+      height: 10rem;
+
+      
+   }
+   .perfil{
+      border-radius: 50%;
+      width: 12rem;
+      height: 12rem;
+      margin-top: .5rem;
+      margin-left: -14.5rem;
+   }
+   .text{
+      color: #FFF;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      margin-top: 5rem;
+      margin-left: -30rem;
+     
+   }
+   .text h1{
+      font-size: 5rem;
+   }
+   .text h2{
+      font-size: 4rem;
+   }
+   .text p{
+      font-size: 3rem;
+   }
+   
+   
+   
+   .about{
+      background-color: rgb(208, 209, 209 , ) !important;
+      width: auto;
+      height: 11rem;
+   }
+   .fa-brands.fa-linkedin:hover { 
+      color:#3c39f7;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); 
+    }
+    .fa-brands.fa-github:hover{
+      color:#32ac94;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); 
+    }
+    .fa-brands.fa-instagram:hover{
+      color:#a84fd1;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); 
+    }
+    .fa-solid.fa-user-lock.text-white:hover{
+      color:#f34a37 !important;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); 
+    }
+    .list-group{
+      --bs-list-group-bg: none !important;
+      --bs-list-group-color: #fff !important;
+   }
+   
+  
+    a {
+      --bs-link-color: none;
+    }
+   
+    .contenedor{
+      max-width: 120rem;
+      margin: 15px;
+      border-radius: .5rem;
+  }
+   .sombra {
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(171,171,171,1);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(171,171,171,1);
+      box-shadow: 0px 0px 15px 0px rgba(171,171,171,1);
+      padding: 2rem;
+      background-color: #FFF;
+      
+   }  
+   
+}
+/** Secciones **/
+@media (max-width: 768px) {
+   .seccion{
+   display: grid;
+   grid-template-columns: 1fr;
+   column-gap: 2rem;
+   }
+   .image{
+      margin-left: 15rem;
+   }
+   .text h1{
+         font-size: 3rem;
+   }
+   .text h2{
+      font-size: 2rem;
+   }
+   .text p{
+      font-size: 1.5rem;
+   }
+   .text-seccion{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      margin-left: auto;
+      
+   }
+   .logo-seccion{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
 
 }
-
-h4 .mt-9{
-   margin-top: 10rem;
-
+.seccion{
+   margin-top: 2rem;
+   
+}
+.logo-seccion{
+   padding: 1rem;
+}
+.text-seccion{
+   margin: 2rem;
+   
+}
+.utn{
+   width: 10rem;
+   
+}
+span{
+   text-align: justify;
 }
 
+label {
+   padding-right: 1rem;
+   margin-left: 2rem;
+   font-size: 1rem;
+  
+}
+
+/**login.html y panel**/
+.login{
+   height: 87vh;
+}
+.adm a{
+   text-decoration: none;
+   font-size: 1.3rem;
+   color: #000;
+}
+.adm:hover{
+   transform: scale(1.3); 
+}
+.perfil-panel{
+   width: 80%;
+}
+.perfil-panel:hover{
+  transform: scale(1.3);
+}
+h4:hover{
+   transform: scale(1.3);
+}

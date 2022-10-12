@@ -4,69 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="shortcut icon" href="index.html"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/babe1c318d.js" crossorigin="anonymous"></script>
     <link href="ASSET/css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Mi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <title>Mi Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" >
-        <div class="container-fluid"> 
-            <a class="navbar-brand" title="ArgProg" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
-                <img width="150" height="80" src="ASSET/IMG/APLogo-20-20.png" alt="ArgentinaPrograma"><img/>
-            </a>
-            <ul class="list-group list-group-horizontal">
-                <li class="list-gruop-item"><i class="ti ti-brand-instagram"></i></li>
-                <li class="list-gruop-item"><i class="ti ti-brand-linkedin"></i></li>
-                <li class="list-gruop-item"><i class="ti ti-brand-github"></i></li>
-                <li class="list-gruop-item">
-                    <i class="ti ti-user" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    </i>
-                </li>
-            </ul>
-        </div>    
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!--ventana login-->
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
-                          </div>
-                          <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
-                          </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!--Banner-->
-    <header class="banner">
-            <div class="container text-center">
-                <div class="row">                   
-                    <div class="col-6 ms-auto me-auto">
-                        <h4 class="mt-9">
-                            Cuando se hace mas grande la ventana quiero que la imagen se valla ajustando a la ventana, que se mueva y que conserve la proporcion. Lo mismo con el background
-                        </h4>
-                    </div>    
-                </div>
-            </div>
+    <header>
+        <!--nav -->
+        <nav class="navbar navbar-expand-sm" >
+            <div class="container-fluid"> 
+                <a class="navbar-brand" title="ArgProg" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+                    <img width="150" height="80" src="ASSET/IMG/APLogo-20-20.png" alt="ArgentinaPrograma"><img/>
+                </a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item fa-solid text-white fa-2x"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="list-group-item fa-solid text-white fa-2x"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="list-group-item fa-solid text-white fa-2x"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="list-group-item fa-solid text-white fa-2x" >         
+                      <!-- btn login modal -->
+                        <a href="login.html"><i class="fa-solid fa-user-lock text-white" data-bs-toggle="modal" data-bs-target="#loginModal"></i></a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+            </div>    
+    
+        </nav>
+    
     </header>
-    <img src="ASSET/IMG/perfil.png" alt="..." class="rounded-circle w-25">
-      <!-- JavaScript Bundle with Popper -->
 
+<!--Banner con perfil y breve descripcion-->
+    <section class="banner">
+            <div class="about-container ">
+                    <div class="image">                               
+                        <img src="ASSET/IMG/perfil1-modified.png" alt="perfil" class="perfil">
+                    </div>
+                    <div class="text">
+                        <h1>Alejandra Carballeira</h1>
+                            <h2>Desarrollador Full-Sack</h2>
+                            <p>Si puedes soñarlo, puedes programarlo.</p>
+                    </div>
+            </div>
+    </section>
+<main>
+<!--inicio de secciones-->
+<div class="contenedor sombra">
+    <!--estudios-->
+    <section class="seccion sombra">
+        <h3>Formacion</h3>
+        <!--1-->
+     <div class="estudio">
+        <div class="logo-seccion">
+            <img src="ASSET/IMG/logo-utn.png" alt="logo-utn" class="utn">
+        </div>
+        <div class="text-seccion">
+            <span>
+            <b>Universidad Tecnológica Nacional (UTN)</b><br>
+            Técnico Universitario en Programación<br>
+            Fecha estimada de finalización: Diciembre 2023.<br>
+            Segundo semestre en curso.
+            </span>
+        </div>
+        <!--2-->
+        <div class="logo-seccion">
+            <img src="ASSET/IMG/se-programar.png" alt="se-programar" class="utn">
+        </div>
+        <div class="text-seccion">
+            <p>Cursada y aprobada la primera etapa de Argentina Programa.<br>Fecha de finalizacion 13 de abril de 2022</p>
+        </div>
+          <!--3-->
+        <div class="logo-seccion">
+            <img src="ASSET/IMG/itba2.png" alt="itba2" class="utn">
+        </div>
+        <div class="text-seccion">
+            <p>Curso de Analisis de Datos en Python. Fecha de finalización Octubre 2021</p>
+        </div>
+        <!--4-->
+        <div class="logo-seccion">
+            <img src="ASSET/IMG/itba1.png" alt="itba2" class="utn">
+        </div>
+        <div class="text-seccion">
+            <p>Curso de Introduductorio a la programacion en Python. Fecha de finalización Agosto 2021</p>
+        <!--5-->
+        <div class="logo-seccion">
+            <img src="ASSET/IMG/" alt="ingles" class="utn">
+        </div>
+        <div class="text-seccion">
+            <p>Cursado y aprobado el 3er año de Ingles. Instituto Cambridge CABA</p>
+        </div>
+    </section>
+    <!--Proyectos-->
+    <section class="seccion sombra">
+        <div class="logo-seccion">
+            <p>aca le tengo que poner algo</p>
+        </div>
+        <div class="text-seccion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, pariatur eos. Quaerat voluptates est tenetur necessitatibus voluptate. Culpa voluptate inventore magni libero alias ad! Delectus voluptatum illum ipsa velit? Sint?</p>
+        </div>
+    </section>
+    <!--Hard Skills & Soft Skills-->
+    <section class="seccion sombra">
+        <h3>Skills</h3>
+  
+            <label for="file">HTML5:</label>
+            <progress id="file" max="100" value="90"> 70% </progress>
+            <br>
+            <label for="file">CSS:</label>
+            <progress id="file" max="100" value="50"> 70% </progress>
+            <br>
+            <label for="file">Python:</label>
+            <progress id="file" max="100" value="90"> 70% </progress>
+            <br>
+            <label for="file">JavaScript:</label>
+            <progress id="file" max="100" value="60"> 70% </progress>
+            <br>
+            <label for="file">JAVA:</label>
+            <progress id="file" max="100" value="70"> 70% </progress>
+            <br>
+            <label for="file">Git</label>
+            <progress id="file" max="100" value="90"> 70% </progress>
+    
+
+
+
+    </section>
+</div>
+</main>
+<!--fin de secciones-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Inicio de Secion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>    
+<!-- JavaScript Bundle with Popper -->
+<footer class="bg-black text-white text-center fs-6">
+    <p> // AleCarb 2022 // </p>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
