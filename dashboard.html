@@ -9,14 +9,14 @@
     <link href="ASSET/css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <title>Mi Portfolio</title>
 </head>
-<body>
+<body class="panel">
   <nav class="navbar navbar-expand-sm" >
       <div class="container-fluid"> 
           <a class="navbar-brand" title="ArgProg" href="index.html">
               <img width="150" height="80" src="ASSET/IMG/APLogo-20-20.png" alt="ArgentinaPrograma"><img/>
           </a>
           <ul class="list-group list-group-horizontal">
-              <li class="list-group-item fa-solid text-white fa-2x" >         
+              <li class="list-group-item fa-solid text-white" >         
                 <!-- btn login -->
                   <a href="login.html"><i class="fa-solid fa-user text-white" data-bs-toggle="modal" data-bs-target="#loginModal"></i></a>
               </li>
@@ -25,82 +25,280 @@
           </button>
       </div>    
   </nav>
-  <div class="container-fluid text-center">
+  <div class="container ">
     <div class="row">
-      <div class="col-1">
-      </div>
-      <div class="col-2 pt-5">
-        <img src="ASSET/IMG/perfil1-modified.png" alt="perfil" class="perfil-panel">
-        <h4 class="mt-5">Alejandra Carballeira</h4>
-        <h4 class="mt-5">Desarrollador Full-Sack</h4>
-        <ul class="list-group mt-5">
-          <li class="list-group-item text-black adm"><a href="#" data-bs-toggle="modal" data-bs-target="#redesModal"><i class="fa-solid fa-share-nodes text-black"></i> Redes</a></li>
-          <li class="list-group-item text-black adm "><a href="#"><i class="fa-regular fa-image"></i> Banner</a></li>
-          <li class="list-group-item  text-black adm"><a href=""><i class="fa-regular fa-circle-info"></i> Info</a></li>
-          <li class="list-group-item text-black adm">A fourth item</li>
-          <li class="list-group-item text-black adm">And a fifth one</li>
-        </ul>
-      </div>
-      <div class="col-8">
-                <!--inicio modal redes-->
-        <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div> <!--fin modal redes-->
-        <!--banner modal-->
-      </div>
-      <div class="col-1">
-      </div>
-    </div>
-  </div>
-<!--main login-->
-<section class="login">
-<div class="container text-center">
-  <div class="row">
-    <div class="col-2">
-    </div>
-    <div class="col-8 p-5">
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-secondary">Ingresar</button>
-      </div>
-      <small><a href="registro.html">registrate</a></small>
-    </div>
-    <div class="col-2">
-    </div>
-  </div>
+      <br>
+      <!--navbar redes-->
+      <div class="col-3 col-sm-8 text-uppercase my-3">redes</div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#edit-redes"><i class="fa-solid fa-pen-to-square"></i></button></div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#redes"><i class="fa-solid fa-trash"></i></button></div>
+      
+      <br>
+      <!-- Imagen banner-->
+      <div class="w-100 d-none d-md-block"></div>
+  
+      <div class="col-3 col-sm-8 text-uppercase  my-3">Imagen banner</div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#edit-banner"><i class="fa-solid fa-pen-to-square"></i></button></div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#banner"><i class="fa-solid fa-trash"></i></button></div>
+
+      <br>
+      <!-- Imagen perfil-->
+      <div class="w-100 d-none d-md-block"></div>
+
+      <div class="col-3 col-sm-8 text-uppercase  my-3">Imagen perfil</div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#edit-perfil"><i class="fa-solid fa-pen-to-square"></i></button></div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#perfil"><i class="fa-solid fa-trash"></i></button></div>
+
+      <br>
+      <!-- nombre y descripcion-->
+      <div class="w-100 d-none d-md-block"></div>
+
+      <div class="col-3 col-sm-8 text-uppercase  my-3">texto Nombre y descripcion</div>
+      <div class="col-3 col-sm-2 my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#edit-nombre_descripcion"><i class="fa-solid fa-pen-to-square"></i></button></div>
+      <div class="col-3 col-sm-2 my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#nombre_descripcion"><i class="fa-solid fa-trash"></i></button></div>
+
+      <br>
+      <!-- Formacion -->
+      <div class="w-100 d-none d-md-block"></div>
+
+      <div class="col-3 col-sm-8 text-uppercase my-3">formacion</div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#edit-formacion"><i class="fa-solid fa-pen-to-square"></i></button></div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#formacion"><i class="fa-solid fa-trash"></i></div>
+      
+      <br>
+      <!--Skills-->
+      <div class="w-100 d-none d-md-block"></div>
+      
+      <div class="col-3 col-sm-8 text-uppercase  my-3">Skills</div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#edit-skill"><i class="fa-solid fa-pen-to-square"></i></button></div>
+      <div class="col-3 col-sm-2  my-3"><button type="button"  data-bs-toggle="modal" data-bs-target="#skill"><i class="fa-solid fa-trash"></i></button>
+      
 </div>
-</section>
+      
 
-
+    </div>
+  </div>
 <footer class="bg-black text-white text-center fs-6">
     <p> // AleCarb 2022 // </p>
 </footer>
-    
+<!--############################ Modales delete ###################################-->
+
+
+<!--Modal delete redes-->
+<div class="modal fade" id="redes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar la seccion redes??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal delete Banner-->
+<div class="modal fade" id="banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar imagen de Banner??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal delete perfil-->
+<div class="modal fade" id="perfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar la imagen de perfil??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal delete nombre y descripcion-->
+<div class="modal fade" id="nombre_descripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar el nombre y descripcion??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal delete formacion-->
+<div class="modal fade" id="formacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar la seccion de formacion??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal delete Skills-->
+<div class="modal fade" id="skill" tabindex="-1" aria-labelledby="skill" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar la seccion de Skills??
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--############################ Modales edit ####################################-->
+
+<!--Modal edit redes-->
+<div class="modal fade" id="edit-redes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Redes</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        editar contenido
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal edit Banner-->
+<div class="modal fade" id="edit-banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Banner</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        editar contenido
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal edit perfil-->
+<div class="modal fade" id="edit-perfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Imagen de Perfil</h1>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        editar contenido
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal edit nombre y descripcion-->
+<div class="modal fade" id="edit-nombre_descripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Nombre y descripcion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        editar contenido // Nombre // descripcion
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal edit formacion-->
+<div class="modal fade" id="edit-formacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Formacion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Editar contenido
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal edit Skills-->
+<div class="modal fade" id="edit-skill" tabindex="-1" aria-labelledby="skill" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Edicion Skills</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Editar contenido
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
